@@ -174,12 +174,11 @@ EOF
 ```
 kubectl get po -n $NS
 ```
-```
-kubectl get vulnerablitiesreport -n $NS
-```
+Once the deployment is completed, the starboard operator will pick up on the changes in the namespace and starts scanning the images. The reports become availble after a few seconds and can listed.
 ```
 kubectl get vulnerabilityreport  -n $NS
 ```
+to see the reports, use
 ```
 kubectl get vulnerabilityreport  -n $NS replicaset-nginx-deployment-7848d4b86f-nginx -o yaml
 
