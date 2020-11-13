@@ -15,7 +15,7 @@ First install the custom resources for the starboard operator
 ```
 kubectl apply -f deploy/crd/vulnerabilityreports.crd.yaml
 ```
-and the necessary objects the run the operator
+and the necessary resources to run the operator
 ```
 kubectl apply -f deploy/static/01-starboard-operator.ns.yaml \
     -f deploy/static/02-starboard-operator.sa.yaml \
