@@ -138,7 +138,7 @@ EOF
 ```
 Let's verify if the operator is installed
 ```
-????
+kubectl get all -n starboard-operator
 ```
 
 ### 4. Create a demo application
