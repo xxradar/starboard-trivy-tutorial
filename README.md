@@ -23,7 +23,7 @@ kubectl apply -f deploy/static/01-starboard-operator.ns.yaml \
     -f deploy/static/03-starboard-operator.clusterrole.yaml \
     -f deploy/static/04-starboard-operator.clusterrolebinding.yaml
 ```
-### Create an operator
+### 3. Create an operator
 To quickly scan the default namespace
 ```
 kubectl apply -f deploy/static/05-starboard-operator.deployment.yaml
@@ -136,9 +136,12 @@ spec:
             failureThreshold: 10
 EOF
 ```
+Let's verify if the operator is installed
+```
+????
+```
 
-
-
+### 4. Create a demo application
 
 ```
 kubectl create ns $NS
