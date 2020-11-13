@@ -8,6 +8,7 @@ kubectl get nodes
 ```
 
 ### 2. Installing the Starboard operator
+Clone the github repo
 ```
 git clone https://github.com/aquasecurity/starboard.git
 ```
